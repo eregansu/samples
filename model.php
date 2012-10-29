@@ -97,6 +97,8 @@ class Sample extends Model
 	public function __construct($args)
 	{
 		/* The constructor is passed any arguments passed to Model::getInstance()
+		 *		
+		 * The parent constructor (Model::__construct) performs the following:
 		 *
 		 * $this->databases is iterated, and if any members of this array
 		 * match keys within $args, then it shall be treated as a database
