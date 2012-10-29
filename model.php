@@ -72,9 +72,15 @@ class Sample extends Model
 		 */
 		if(!isset($args['instanceKey']))
 		{
-			/* Allow callers to optionally specify an 'instance number' to
+			/* Example:—
+			 *
+			 * Allow callers to optionally specify an 'instance number' to
 			 * permit multiple instances to be created using the same database
 			 * connection.
+			 *
+			 * Note that 'instanceNumber' is only used here for illustration;
+			 * there is nothing which requires you follow this pattern at all,
+			 * let alone use this argument.
 			 */
 			if(!isset($args['instanceNumber']))
 			{
